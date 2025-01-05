@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="530.0" prefWidth="750.0" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PlayerByPositionController">
+    <children>
+      <ImageView fitHeight="540.0" fitWidth="756.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/posi.png" />
+         </image>
+      </ImageView>
+        <ListView fx:id="playerListView" layoutX="146.0" layoutY="196.0" prefHeight="215.0" prefWidth="422.0" styleClass="list-view" />
+      <Button fx:id="backButton" layoutX="37.0" layoutY="441.0" mnemonicParsing="false" onAction="#back" prefHeight="58.0" prefWidth="59.0" styleClass="back-button" />
+        <Button fx:id="showDetailsButton" layoutX="547.0" layoutY="447.0" mnemonicParsing="false" onAction="#showPlayerDetails" styleClass="addPlayer-button" text="Show Details" />
+      <Button fx:id="BatsmanButton" layoutX="146.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleSearchPlayersByPosition" prefHeight="46.0" prefWidth="125.0" styleClass="base-button" text="Batsman" />
+      <Button fx:id="WicketKeeperButton" layoutX="146.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleSearchPlayersByPosition" styleClass="base-button" text="Wicketkeeper" />
+      <Button fx:id="BowlerButton" layoutX="434.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleSearchPlayersByPosition" prefHeight="46.0" prefWidth="126.0" styleClass="base-button" text="Bowler" />
+      <Button fx:id="AllRounderButton" layoutX="435.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleSearchPlayersByPosition" prefHeight="46.0" prefWidth="125.0" styleClass="base-button" text="Allrounder" />
+      <ImageView fitHeight="42.0" fitWidth="48.0" layoutX="497.0" layoutY="449.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/profile.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="530.0" prefWidth="750.0" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignUpController">
+   <children>
+      <ImageView fitHeight="543.0" fitWidth="756.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/signupScene.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="535.0" prefWidth="756.0">
+         <children>
+            <Text layoutX="59.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Club Name :" wrappingWidth="169.4398193359375">
+               <font>
+                  <Font name="Georgia Bold" size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="69.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :" wrappingWidth="149.4398193359375">
+               <font>
+                  <Font name="Georgia Bold" size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="69.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password :" wrappingWidth="246.23974609375">
+               <font>
+                  <Font name="Georgia Bold" size="26.0" />
+               </font>
+            </Text>
+            <TextField fx:id="username" layoutX="249.0" layoutY="98.0" prefHeight="34.0" prefWidth="312.0" promptText="Club Name" />
+            <PasswordField fx:id="password" layoutX="249.0" layoutY="165.0" prefHeight="34.0" prefWidth="312.0" promptText="Password" />
+            <PasswordField fx:id="confirmPassword" layoutX="249.0" layoutY="250.0" prefHeight="34.0" prefWidth="312.0" promptText="Confirm Password" />
+            <Button fx:id="backButton" layoutX="59.0" layoutY="416.0" mnemonicParsing="false" onAction="#back" prefHeight="74.0" prefWidth="71.0" styleClass="back-button" />
+            <Button fx:id="DoneButton" layoutX="455.0" layoutY="404.0" mnemonicParsing="false" onAction="#Done" prefHeight="98.0" prefWidth="138.0" styleClass="image-button">
+
+      </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

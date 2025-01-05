@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="530.0" prefWidth="750.0" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddPlayer">
+   <children>
+      <ImageView fitHeight="536.0" fitWidth="760.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/fdfdsfsdfds.png" />
+         </image>
+      </ImageView>
+      <Text fill="#fffdfd" layoutX="152.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+         <font>
+            <Font name="Georgia Bold" size="20.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="133.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Text>
+      <Button fx:id="backButton" layoutX="31.0" layoutY="458.0" mnemonicParsing="false" onAction="#back" prefHeight="55.0" prefWidth="54.0" styleClass="back-button" />
+      <Button fx:id="addButton" layoutX="592.0" layoutY="463.0" mnemonicParsing="false" onAction="#handleAddPlayer" prefHeight="37.0" prefWidth="92.0" styleClass="addPlayer-button" text="Add" />
+      <TextField fx:id="nameField" layoutX="227.0" layoutY="89.0" prefHeight="33.0" prefWidth="411.0" promptText="Player Name" />
+      <TextField fx:id="countryField" layoutX="227.0" layoutY="132.0" prefHeight="10.0" prefWidth="411.0" promptText="Country" />
+      <TextField fx:id="ageField" layoutX="227.0" layoutY="182.0" prefHeight="23.0" prefWidth="411.0" promptText="Age" />
+      <TextField fx:id="heightField" layoutX="227.0" layoutY="227.0" prefHeight="23.0" prefWidth="411.0" promptText="Height" />
+      <TextField fx:id="positionField" layoutX="227.0" layoutY="276.0" prefHeight="23.0" prefWidth="411.0" promptText="Position" />
+      <TextField fx:id="jerseynumberField" layoutX="227.0" layoutY="324.0" prefHeight="23.0" prefWidth="411.0" promptText="Jersey Number" />
+      <TextField fx:id="weeklySalaryField" layoutX="227.0" layoutY="368.0" prefHeight="23.0" prefWidth="411.0" promptText="Weekly salary" />
+      <ImageView fitHeight="57.0" fitWidth="201.0" layoutX="298.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Add-Player-1-5-2025.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="83.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weekly Salary:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="72.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jersey Number:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="135.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="44.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Height (in meters):">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="86.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age (in years): ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="55.0" fitWidth="48.0" layoutX="538.0" layoutY="462.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/add.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="530.0" prefWidth="750.0" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SearchClubs">
+   <ImageView fitHeight="537.0" fitWidth="756.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/sddestat.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="100.0" fitWidth="350.0" layoutX="200.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/Club-Player-Statistics-1-5-2025.png" />
+      </image>
+   </ImageView>
+    <TextField fx:id="clubNameField" layoutX="241.0" layoutY="77.0" prefHeight="36.0" prefWidth="322.0" promptText="Enter club name here" />
+
+    <!-- Buttons for options -->
+    <Button layoutX="54.0" layoutY="142.0" onAction="#handleMaxSalary" prefHeight="46.0" prefWidth="290.0" styleClass="base-button" text="Player(s) with the Maximum Salary" />
+
+    <Button layoutX="438.0" layoutY="142.0" onAction="#handleMaxAge" prefHeight="46.0" prefWidth="278.0" styleClass="base-button" text="Player(s) with the Maximum Age" />
+
+    <Button layoutX="55.0" layoutY="208.0" onAction="#handleMaxHeight" prefHeight="46.0" prefWidth="290.0" styleClass="base-button" text="Player(s) with the Maximum Height" />
+
+    <Button layoutX="438.0" layoutY="208.0" onAction="#handleTotalYearlySalary" prefHeight="46.0" prefWidth="250.0" styleClass="base-button" text="Total Yearly Salary of a Club" />
+    <ListView fx:id="playerListView" layoutX="167.0" layoutY="285.0" prefHeight="162.0" prefWidth="416.0" styleClass="list-view" />
+
+    <Button fx:id="showDetailsButton" layoutX="601.0" layoutY="466.0" mnemonicParsing="false" onAction="#showPlayerDetails" prefHeight="46.0" prefWidth="126.0" styleClass="addPlayer-button" text="Show Details" />
+   <Button fx:id="backButton" layoutX="36.0" layoutY="460.0" mnemonicParsing="false" onAction="#back" prefHeight="53.0" prefWidth="54.0" styleClass="back-button" />
+   <Label layoutX="84.0" layoutY="77.0" prefHeight="30.0" prefWidth="141.0" style="-fx-font-size: 25px; -fx-font-weight: bold;" text="Club Name:" textFill="WHITE">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <ImageView fitHeight="46.0" fitWidth="47.0" layoutX="547.0" layoutY="466.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/profile.png" />
+      </image>
+   </ImageView>
+
+</AnchorPane>

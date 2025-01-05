@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="530.0" prefWidth="750.0" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MarketPlaceController">
+   <ImageView fitHeight="550.0" fitWidth="764.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/23.png" />
+      </image>
+   </ImageView>
+   <ListView fx:id="playerListView" layoutX="128.0" layoutY="101.0" prefHeight="282.0" prefWidth="494.0" styleClass="list-view" />
+
+   <Button fx:id="backButton" layoutX="43.0" layoutY="434.0" mnemonicParsing="false" onAction="#back" prefHeight="66.0" prefWidth="66.0" styleClass="back-button" />
+   <Button fx:id="showDetailsButton" layoutX="600.0" layoutY="447.0" mnemonicParsing="false" onAction="#showPlayerDetails" prefHeight="46.0" prefWidth="130.0" styleClass="base-button" text="Show Details" />
+   <Button fx:id="buyButton" layoutX="318.0" layoutY="444.0" mnemonicParsing="false" onAction="#buyPlayer" prefHeight="46.0" prefWidth="111.0" styleClass="addPlayer-button" text="Buy" />
+   <ImageView fitHeight="90.0" fitWidth="392.0" layoutX="186.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/Market-Place-1-5-2025.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="41.0" fitWidth="44.0" layoutX="549.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/profile.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="263.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/online-shopping.png" />
+      </image>
+   </ImageView>
+</AnchorPane>
